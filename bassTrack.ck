@@ -1,4 +1,6 @@
 
+2::second => dur T;
+T - (now %T) => now;
 
 while(1){
     
@@ -6,14 +8,6 @@ while(1){
     SndBuf buffy => PRCRev r => dac;
     
     Delay del[3];
-/*    
-    //Oops delay should be array
-    input => del[0] => dac;
-    input => del[1] => dac;
-    input => del[2] => dac;
-    
-    (.5/8.)::second => d.delay;
- */   
     .2 => r.mix;
 
    //me.dir()+"samples/percussion/bass-drum__025_mezzo-forte_bass-drum-mallet.mp3" => buffy.read; 
@@ -22,7 +16,7 @@ while(1){
    1 => buffy.gain; 
    1 => buffy.rate;    
     
-   .5::second => now;  
+   2::second => now;  
     
     
 }
