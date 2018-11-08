@@ -1,12 +1,12 @@
 
 2::second => dur T;
 T - (now %T) + 1::second => now;
+
+// declare the object which will store the sound file, and pass it through tothe dac
+SndBuf buffy => PRCRev r => dac;
+
 while(1){
     
-    // declare the object which will store the sound file, and pass it through tothe dac
-    SndBuf buffy => PRCRev r => dac;
-    
-    Delay del[3];
     .2 => r.mix;
 
    //me.dir()+"samples/percussion/bass-drum__025_mezzo-forte_bass-drum-mallet.mp3" => buffy.read; 
@@ -16,6 +16,4 @@ while(1){
    1 => buffy.rate;    
     
    2::second => now;  
-    
-    
 }
