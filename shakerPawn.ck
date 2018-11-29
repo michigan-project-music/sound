@@ -14,7 +14,11 @@ while(1){
    .6 => buffy.gain; 
    1 => buffy.rate;    
     
-   2::second => now;  
+   1::second => now;  
+
+   0 => buffy.gain;
+
+   1::second => now;
     
 }
 
