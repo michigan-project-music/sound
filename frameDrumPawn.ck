@@ -5,6 +5,8 @@ T - (now %T) => now;
 // declare the object which will store the sound file, and pass it through tothe dac
 SndBuf buffy => PRCRev r => dac;
 
+0 => int playNote;
+
 while(1){
     
     .2 => r.mix;
@@ -12,10 +14,17 @@ while(1){
    //me.dir()+"samples/percussion/bass-drum__025_mezzo-forte_bass-drum-mallet.mp3" => buffy.read; 
    me.dir()+"frame_drum.wav" => buffy.read; 
 
-   1 => buffy.gain; 
-   1 => buffy.rate;    
+    if(playNote == 0){
+        0 => buffy.gain;
+	1 => playNote;
+    }
+    else{
+        .6 => buffy.gain;
+	0 => playNote;
+    }
     
-   2::second => now;  
+   Std.rand2f( 0.2, 1.0 ) => buffy.rate;    
+   .5::second => now;  
     
 }
 

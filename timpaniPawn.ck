@@ -12,7 +12,7 @@ while(1){
    //me.dir()+"samples/percussion/bass-drum__025_mezzo-forte_bass-drum-mallet.mp3" => buffy.read; 
    me.dir()+"timpani.wav" => buffy.read; 
 
-   1 => buffy.gain; 
+   .85 => buffy.gain; 
    1 => buffy.rate;    
     
    2::second => now;  
