@@ -9,9 +9,8 @@ SndBuf buffy => PRCRev r => dac;
 
 while(1){
     
-    .2 => r.mix;
+    0 => r.mix;
 
-   //me.dir()+"samples/percussion/bass-drum__025_mezzo-forte_bass-drum-mallet.mp3" => buffy.read; 
    me.dir()+"frame_drum.wav" => buffy.read; 
 
     if(playNote == 0){

@@ -9,7 +9,7 @@ SndBuf buffy => PRCRev r => dac;
 
 while(1){
     
-    .2 => r.mix;
+    0 => r.mix;
 
    me.dir()+"snare.wav" => buffy.read; 
 
