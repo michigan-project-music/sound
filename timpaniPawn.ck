@@ -15,10 +15,8 @@ while(1){
     0 => buffy.pos;
     
     0 => r.mix;
-
    
-   1 => float gain;
-
+   .6 => float gain;
    gain => buffy.gain; 
    .5 => buffy.rate;    
 
@@ -27,12 +25,12 @@ while(1){
    for(0 => int i; i < 1000; ++i){
       .85/1000. -=> gain;
       gain => buffy.gain;
-      1::ms => now;
+      .5::ms => now;
    }
 
 
     
-   2.5::second => now;  
+   3::second => now;  
     
 }
 
