@@ -12,13 +12,15 @@ while(1){
     0 => buffy.pos;
     0 => r.mix;
 
-    if(counter != 7){
-        0 => buffy.gain;
-	++counter;
+    if(counter == 6){
+        .9 => buffy.gain;
     }
     else{
+        0 => buffy.gain;
+    }
+    ++counter;
+    if(counter == 8){
     	0 => counter;
-        .9 => buffy.gain;
     }
     
    1 => buffy.rate;    
