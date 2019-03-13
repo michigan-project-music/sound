@@ -1,10 +1,10 @@
 4::second => dur T;
-T - (now %T) => now;
+T - (now %T) + 0.5::second => now;
 
 SndBuf buffy1 => dac;
 SndBuf buffy2 => dac;
-me.dir()+"bellLoop1.wav" => buffy1.read;
-me.dir()+ "bellLoop1.wav"=> buffy2.read;
+me.dir()+"bellLower1.wav" => buffy1.read;
+me.dir()+ "bellLower1.wav"=> buffy2.read;
 
 0 => buffy2.gain;
 
