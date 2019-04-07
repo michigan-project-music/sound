@@ -10,7 +10,7 @@ while(1){
 
    me.dir()+"train.wav" => buffy.read; 
 
-   1 => buffy.gain; 
+   .5 => buffy.gain; 
     
    2::second => now;  
     

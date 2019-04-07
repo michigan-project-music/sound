@@ -11,7 +11,7 @@ while(1){
 
    me.dir()+"shaker.wav" => buffy.read; 
 
-   .6 => buffy.gain; 
+   .3 => buffy.gain; 
    1 => buffy.rate;    
     
    1::second => now;  

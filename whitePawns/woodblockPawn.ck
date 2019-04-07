@@ -18,7 +18,7 @@ while(1){
     }
     else{
     	0 => counter;
-        .9 => buffy.gain;
+        .45 => buffy.gain;
     }
     
    1 => buffy.rate;    
