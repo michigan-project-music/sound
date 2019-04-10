@@ -11,7 +11,7 @@ while(1){
 
    me.dir()+"tambourine__025_forte_hand.wav" => buffy.read; 
 
-   0.5 => buffy.gain; 
+   0.25 => buffy.gain; 
    1 => buffy.rate;    
     
    2::second => now;  

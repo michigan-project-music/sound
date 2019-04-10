@@ -18,7 +18,7 @@ while(1){
 	1 => playNote;
     }
     else{
-        .3 => buffy.gain;
+        .15 => buffy.gain;
 	0 => playNote;
     }
     

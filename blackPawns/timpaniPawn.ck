@@ -16,7 +16,7 @@ while(1){
    0 => buffy.pos;
    0 => r.mix;
 
-   .6 => float gain;
+   .3 => float gain;
    gain => buffy.gain; 
    1 => buffy.rate;    
 

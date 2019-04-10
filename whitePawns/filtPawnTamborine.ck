@@ -11,7 +11,7 @@ while(1){
    0 => buffy.pos;
 
    1 => r.gain;
-   .4 => buffy.gain; 
+   .2 => buffy.gain; 
    .5::second => now;
    
    1 => float rev;

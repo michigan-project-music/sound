@@ -4,7 +4,7 @@ T - (now %T) => now;
 
 // declare the object which will store the sound file, and pass it through tothe dac
 SndBuf buffy => PRCRev r => Dyno d => dac;
-me.dir()+"timpani.wav" => buffy.read; 
+me.dir()+"bishop3.wav" => buffy.read; 
 
 d.limit();
 
@@ -16,21 +16,11 @@ while(1){
     
     0 => r.mix;
    
-   .3 => float gain;
+   1 => float gain;
    gain => buffy.gain; 
-   .5 => buffy.rate;    
-
-   .5::second => now;
-
-   for(0 => int i; i < 1000; ++i){
-      .85/1000. -=> gain;
-      gain => buffy.gain;
-      .5::ms => now;
-   }
-
 
     
-   3::second => now;  
+   4::second => now;  
     
 }
 

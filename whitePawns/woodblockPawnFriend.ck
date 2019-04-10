@@ -13,7 +13,7 @@ while(1){
     0 => r.mix;
 
     if(counter == 6){
-        .9 => buffy.gain;
+        .45 => buffy.gain;
     }
     else{
         0 => buffy.gain;
